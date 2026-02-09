@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: bad_handwriting;
+    src: url(bad_handwriting.ttf);
+}
+
+.bad-handwriting {
+    font-family: bad_handwriting;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
