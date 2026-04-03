@@ -68,7 +68,7 @@ function Home() {
       <h1 id="navigation" className="text-8xl text-center bad-handwriting">hi, I'm Kat! look at my...</h1>
       {/* Navigation */}
       <nav className="flex place-self-center">
-        <Link to="/">
+        <Link to="/design">
           <div className="place-items-center">
             <img src="images/icon_design.png" className="w-[40vh] hover:w-[43vh] duration-200"></img>
             <h2 className="text-5xl bad-handwriting">design</h2>
@@ -109,7 +109,7 @@ function Home() {
           <p className="text-3xl bad-handwriting mt-[3vh]">
             ...but in the future, I want to become an <b>engineer</b> & create projects that bring others happiness! I also want to teach other people how to create things that make them happy, so we can all make & share <b>cool projects! </b>
             I've been drawing my whole life, but my passion for creating technical projects has been strengthened ever since I joined <a href="hackclub.com" className="underline hover:decoration-wavy">Hack Club</a>, an international non-profit that encourages teens to make technical projects.
-            I've organized multiple Hack Club events for other teens, such as <a href="storyboard.hackclub.com" className="underline hover:decoration-wavy">Storyboard</a> and <a href="campfire.hackclub.com/ottawa" className="underline hover:decoration-wavy">Campfire Ottawa.</a> I hope to make more projects and host more events in the future!
+            I've organized multiple Hack Club events for other teens, such as <a href="paradox.hackclub.com" class="underline hover:decoration-wavy">Paradox,</a> <a href="storyboard.hackclub.com" className="underline hover:decoration-wavy">Storyboard</a> and <a href="campfire.hackclub.com/ottawa" className="underline hover:decoration-wavy">Campfire Ottawa.</a> I hope to make more projects and host more events in the future!
             <br/> Interested my design/illustration work? <a href="_top" class="underline hover:decoration-wavy text-pink-800 hover:text-pink-900">Contact me!</a>
           
           </p>
