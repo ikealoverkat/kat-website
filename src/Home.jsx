@@ -4,7 +4,6 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import App from './App';
-import Blog from './Blog';
 import Footer from './Footer';
 import { Link } from "react-router-dom";
 
