@@ -76,7 +76,7 @@ function Home() {
         <Link to="/">
           <div className="place-items-center">
             <img src="images/icon_awards.png" className="w-[40vh] hover:w-[43vh] duration-200"></img>
-            <h2 className="text-5xl bad-handwriting">events/work/awards</h2>
+            <h2 className="text-5xl bad-handwriting">work/ECs & achievements</h2>
           </div>
         </Link>
         <Link to="/">
@@ -104,13 +104,17 @@ function Home() {
       <div className="p-[10vh] bg-[url(images/backgrounds/home.webp)] bg-cover m-[12vh] gap-[2vh] rounded-2xl flex flex-row -pb-[8vh] drop-shadow-xl drop-shadow-black/25 hover:drop-shadow-black/50 duration-300">
         <img src="images/vegetable3.png" className="w-[50vh] m-[10vh]"></img>
         <div>
-          <h1 className="text-5xl bad-handwriting">right now, i'm a freelance artist & HS student...</h1>
+          <h1 className="text-5xl bad-handwriting">I'm a freelance artist & HS student...</h1>
           <p className="text-3xl bad-handwriting mt-[3vh]">
-            ...but in the future, I want to become an <b>engineer</b> & create projects that bring others happiness! I also want to teach other people how to create things that make them happy, so we can all make & share <b>cool projects! </b>
-            I've been drawing my whole life, but my passion for creating technical projects has been strengthened ever since I joined <a href="hackclub.com" className="underline hover:decoration-wavy">Hack Club</a>, an international non-profit that encourages teens to make technical projects.
-            I've organized multiple Hack Club events for other teens, such as <a href="paradox.hackclub.com" class="underline hover:decoration-wavy">Paradox,</a> <a href="storyboard.hackclub.com" className="underline hover:decoration-wavy">Storyboard</a> and <a href="campfire.hackclub.com/ottawa" className="underline hover:decoration-wavy">Campfire Ottawa.</a> I hope to make more projects and host more events in the future!
-            <br/> Interested my design/illustration work? <a href="_top" class="underline hover:decoration-wavy text-pink-800 hover:text-pink-900">Contact me!</a>
-          
+            ...with <b>design</b> <i>(Figma, Adobe Suites, Krita)</i> and <b>web development</b> <i>(HTML/CSS/JS, React, Svelte, Express.js)</i> experience.
+            <br /><br />
+            I'm currently an intern at <a href="hackclub.com" className="underline hover:decoration-wavy">Hack Club</a>, an international non-profit that encourages teens to make technical projects.
+            I've organized multiple Hack Club events for other teens, such as <a href="paradox.hackclub.com" class="underline hover:decoration-wavy">Paradox,</a> <a href="storyboard.hackclub.com" className="underline hover:decoration-wavy">Storyboard</a> and <a href="campfire.hackclub.com/ottawa" className="underline hover:decoration-wavy">Campfire Ottawa.</a>
+            <br /><br />
+            This summer, I'll be working with Hack Club's <a href="athena.hackclub.com" className="underline hover:decoration-wavy">Athena</a>, a program that supports gender minorities in tech.
+
+            <br /><br /> Interested in working with me? <a href="_top" class="underline hover:decoration-wavy text-pink-800 hover:text-pink-900">Contact me!</a>
+
           </p>
           <a href="#navigation"><h2 className="text-4xl bad-handwriting mt-[2vh] font-bold underline hover:decoration-wavy">see all my work here...</h2></a>
         </div>
