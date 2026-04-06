@@ -1,6 +1,14 @@
 import { useState } from 'react';
 import Footer from './Footer';
 
+const SpaceshipImages = [
+    { src: "images/design/webdesign/screenshot.png", alt: "spaceship hero" },
+    { src: "images/design/webdesign/spaceship_prizes.png", alt: "spaceship prizes page" },
+    { src: "images/design/webdesign/spaceship_footer.png", alt: "spaceship website footer" },
+    { src: "images/design/webdesign/spaceship_faq.png", alt: "spaceship FAQ" },
+    { src: "images/design/webdesign/spaceship_mascots.png", alt: "spaceship mascot picture" },
+]
+
 const paradoxImages = [
     { src: "images/design/webdesign/brand_kit.png", alt: "paradox brand kit" },
     { src: "images/design/webdesign/hero.png", alt: "paradox landing page hero" },
@@ -11,7 +19,11 @@ const paradoxImages = [
 
 const sleepoverImages = [
     { src: "images/design/webdesign/sleepover_brand_ki.png", alt: "sleepover brand kit" },
-    { src: "images/design/webdesign/sleepover_brand_ki.png", alt: "sleepover brand kit" },
+    { src: "images/design/webdesign/sleepover_landing.png", alt: "sleepover landing page" },
+    { src: "images/design/webdesign/sleepover_home.png", alt: "sleepover home page" },
+    { src: "images/design/webdesign/gallery.png", alt: "sleepover gallery page" },
+    { src: "images/design/webdesign/sleepover_shop.png", alt: "sleepover shop page" },
+    { src: "images/design/webdesign/sleepover_order.png", alt: "sleepover order page" },
 ]
 
 function WebDesignContainer({ title, description, link, imgConstants }) {
@@ -66,12 +78,21 @@ function Design() {
                     <div className={activeSection === null ? 'block place-self-center h-[55vh]' : 'hidden'}>
                         <h1 className="text-center bad-handwriting text-3xl text-pink-900">you haven't opened anything yet. <br />click an item on the sidebar to view my work!</h1>
                     </div>
+
                     <div className={activeSection === 'webdesign' ? 'block h-[55vh] overflow-y-scroll scrollbar' : 'hidden'}>
                         <h1 className="text-6xl bad-handwriting text-pink-800">web design</h1>
                         <h2 className="text-4xl bad-handwriting">work for <a className="underline hover:decoration-wavy" href="https://hackclub.com" target="_blank">Hack Club</a> and my personal websites. </h2>
-                        <WebDesignContainer title="Paradox" description="Branding I did for Hack Club's Paradox, a program where teens spend 35 hours building projects to go to a hackathon in a theatre in London." link="https://paradox.hackclub.com" imgConstants={paradoxImages} />
                         <WebDesignContainer title="Sleepover" description="Branding for Hack Club Athena Initiative's Sleepover, an all-girls coding program where teens spend 30 hours creating technical projects for a Sleepover-themed hackathon in Chicago." link="https://sleepover.hackclub.com" imgConstants={sleepoverImages} />
+                        <WebDesignContainer title="Spaceship" description="Website design for Hack Club's Spaceship, a pitch for a program where teens code 35+ hours to earn a trip to wherever they want, or exchange their hours for prizes!" link="https://spaceship-website.vercel.app/" imgConstants={SpaceshipImages} />
+                        <WebDesignContainer title="Paradox" description="Branding I did for Hack Club's Paradox, a program where teens spend 35 hours building projects to go to a hackathon in a theatre in London." link="https://paradox.hackclub.com" imgConstants={paradoxImages} />
+                        {/* more */}
+                        <div>
+                            <h1 className="bad-handwriting text-5xl underline text-pink-900">+ More</h1>
+                            <h2 className="bad-handwriting text-3xl">Other design work I've done.</h2>
+                            <p>add arcade website and storyboard anmd shi etc</p>
+                        </div>
                     </div>
+
                     {/* graphic design container */}
                     <div className={activeSection === 'graphicdesign' ? 'block h-[55vh] overflow-y-scroll scrollbar' : 'hidden'}>
                         <h1 className="text-6xl bad-handwriting text-pink-800">graphic design</h1>
@@ -95,7 +116,7 @@ function Design() {
                     <div className={activeSection === 'aboutcontact' ? 'block h-[55vh] overflow-y-scroll scrollbar' : 'hidden'}>
                         {/* contact& work info part */}
                         <div>
-                            <h1 className="text-6xl bad-handwriting">Let's work together!</h1>                            
+                            <h1 className="text-6xl bad-handwriting">Let's work together!</h1>
                             <h1 className="text-4xl bad-handwriting mb-[2vh]">If you're interested in collaborating to make your brand, website, or idea come to life, please reach out for more information.</h1>
                         </div>
                         {/* idk this front part */}
