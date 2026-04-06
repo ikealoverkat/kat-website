@@ -17,3 +17,8 @@
 html {
     scroll-behavior: smooth;
 }
+
+.scrollbar {
+    scrollbar-color: rgb(244, 207, 225) transparent;
+    scrollbar-width: 40px;
+}
