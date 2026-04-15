@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Footer from './Footer';
+import { Empty } from './Empty';
 
 const SpaceshipImages = [
     { src: "images/design/webdesign/screenshot.png", alt: "spaceship hero" },
@@ -87,12 +88,15 @@ function Design() {
                         <WebDesignContainer title="Paradox" description="Branding I did for Hack Club's Paradox, a program where teens spend 35 hours building projects to go to a hackathon in a theatre in London." link="https://paradox.hackclub.com" imgConstants={paradoxImages} />
                         {/* more */}
                         <div>
-                            <h1 className="bad-handwriting text-5xl underline text-pink-900">+ More</h1>
-                            <h2 className="bad-handwriting text-3xl">Other design work I've done.</h2>
-                            <p>add arcade website and storyboard anmd shi etc</p>
+                            <h1 className="bad-handwriting text-5xl underline text-pink-900 hidden">+ More</h1>
+                            <h2 className="bad-handwriting text-3xl hidden">Other design work I've done.</h2>
+                            <p className="hidden">add arcade website and storyboard anmd shi etc</p>
                         </div>
                     </div>
-
+                    {/* empty */}
+                    <div className={activeSection === 'mascots' || activeSection === 'illustration' ? 'block h-[55vh] overflow-y-scroll scrollbar' : 'hidden'}>
+                        <Empty />
+                    </div>
                     {/* graphic design container */}
                     <div className={activeSection === 'graphicdesign' ? 'block h-[55vh] overflow-y-scroll scrollbar' : 'hidden'}>
                         <h1 className="text-6xl bad-handwriting text-pink-800">graphic design</h1>
@@ -140,6 +144,9 @@ function Design() {
                                 <h1 className="text-5xl bad-handwriting text-pink-700">contact me!</h1>
                                 {/* contact */}
                                 {/* chopped asl fix later */}
+                                <div>
+                                    <h1 className="text-4xl bad-handwriting m-[1vh]">I'm easiest to contact via phone. <a className="underline hover:decoration-wavy" href="tel:+1(613)4153586">tel:+1(613)4153586</a></h1>
+                                </div>
                                 <div className="flex flex-row gap-[4vh] pointer-events-auto">
                                     <a href="https://github.com/ikealoverkat" target="_blank"><img src="images/icon_github.png" width="50vh" className="hover:w-[6.5vh] duration-200"></img></a>
                                     <a href="mailto:katwang7749@gmail.com" target="_blank"><img src="images/icon_mail.png" width="50vh" className="mt-2 hover:w-[6.5vh] duration-200"></img></a>

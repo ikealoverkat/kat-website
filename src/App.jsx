@@ -6,6 +6,7 @@ import './App.css'
 import Home from './Home';
 import Blog from './Blog';
 import Design from './Design';
+import Empty from './Empty';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/design" element={<Design />}/>
+        <Route path="/empty" element={<Empty />}/>       
       </Routes>
     </BrowserRouter>
   );

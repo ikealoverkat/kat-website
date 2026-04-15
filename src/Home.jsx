@@ -74,13 +74,13 @@ function Home() {
           </div>
         </Link>
         <Link to="/">
-          <div className="place-items-center">
+          <div className="place-items-center hidden">
             <img src="images/icon_awards.png" className="w-[40vh] hover:w-[43vh] duration-200"></img>
             <h2 className="text-5xl bad-handwriting">work/ECs & achievements</h2>
           </div>
         </Link>
         <Link to="/">
-          <div className="place-items-center">
+          <div className="place-items-center hidden">
             <img src="images/icon_projects.png" className="w-[40vh] hover:w-[43vh] duration-200"></img>
             <h2 className="text-5xl bad-handwriting">projects</h2>
           </div>
