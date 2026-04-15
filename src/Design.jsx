@@ -30,8 +30,8 @@ const sleepoverImages = [
 function WebDesignContainer({ title, description, link, imgConstants }) {
     return (
         <div className="m-[2vh]">
-            <h1 className="bad-handwriting text-5xl underline text-pink-900">{title}</h1>
-            <h2 className="bad-handwriting text-3xl">{description} <a className="italic text-pink-700 underline hover:decoration-wavy" href={link} target="_blank">See the website</a></h2>
+            <h1 className="font-bad-handwriting text-5xl underline text-pink-900">{title}</h1>
+            <h2 className="font-bad-handwriting text-3xl">{description} <a className="italic text-pink-700 underline hover:decoration-wavy" href={link} target="_blank">See the website</a></h2>
             <div className="mt-[2vh] flex flex-row [&>img]:m-[1vh] scrollbar overflow-x-scroll [&>img]:h-[20vh] [&>img]:outline-2 [&>img]:outline-pink-900 [&>img]:hover:scale-102 [&>img]:duration-200 [&>img]:rounded-xl">
                 {imgConstants.map(imgConstant => (
                     <img src={imgConstant.src} alt={imgConstant.alt} />
@@ -42,21 +42,21 @@ function WebDesignContainer({ title, description, link, imgConstants }) {
 
 function DesignTool({ tool }) {
     return (
-        <h1 className="rounded-xl p-[1.2vh] duration-100 hover:p-[1.5vh] text-3xl bad-handwriting bg-linear-to-b from-white to-white/80 shadow-md shadow-black/25 hover:shadow-black/50 hover:shadow-md">{tool}</h1>
+        <h1 className="rounded-xl p-[1.2vh] duration-100 hover:p-[1.5vh] text-3xl font-bad-handwriting bg-linear-to-b from-white to-white/80 shadow-md shadow-black/25 hover:shadow-black/50 hover:shadow-md">{tool}</h1>
     )
 }
 
 function Design() {
     const [activeSection, setActiveSection] = useState(null);
     return (
-        <div className="p-[4vh] bg-[url('images/backgrounds/pink_bg_2.webp')] bg-cover">
+        <div className="p-[4vh] bg-cover" style={{ backgroundImage: "url('/images/backgrounds/pink_bg_2.webp')" }}>
             {/* title block */}
             <div className="flex flex-row gap-[4vh] h-40">
                 {/* text */}
                 <div>
-                    <a href="/" className="text-3xl bad-handwriting underline hover:decoration-wavy">back</a>
-                    <h1 className="text-7xl bad-handwriting underline text-pink-800">design</h1>
-                    <h2 className="text-5xl bad-handwriting">I love to design mascots & create branding!</h2>
+                    <a href="/" className="text-3xl font-bad-handwriting underline hover:decoration-wavy">back</a>
+                    <h1 className="text-7xl font-bad-handwriting underline text-pink-800">design</h1>
+                    <h2 className="text-5xl font-bad-handwriting">I love to design mascots & create branding!</h2>
                 </div>
                 <img src="images/vegetable2.png" alt="vegetable cat" className="object-scale-down" />
             </div>
@@ -65,31 +65,31 @@ function Design() {
                 {/* sidebar */}
                 <div class="w-fit bg-linear-to-b from-white to-white/50">
                     <ul className="[&>li]:text-5xl [&>li]:mb-[1vh] [&>li]:hover:decoration-wavy [&>li]:hover:underline [&>li]:hover:scale-103 [&>li]:duration-200">
-                        <li className="bad-handwriting text-pink-800 underline italic">explore</li>
-                        <li className="bad-handwriting" onClick={() => activeSection !== 'webdesign' ? setActiveSection('webdesign') : setActiveSection(null)}>web design</li>
-                        <li className="bad-handwriting" onClick={() => activeSection !== 'mascots' ? setActiveSection('mascots') : setActiveSection(null)}>mascots</li>
-                        <li className="bad-handwriting" onClick={() => activeSection !== 'graphicdesign' ? setActiveSection('graphicdesign') : setActiveSection(null)}>graphic design</li>
-                        <li className="bad-handwriting" onClick={() => activeSection !== 'illustration' ? setActiveSection('illustration') : setActiveSection(null)}>illustration</li>
-                        <li className="bad-handwriting" onClick={() => activeSection !== 'aboutcontact' ? setActiveSection('aboutcontact') : setActiveSection(null)}>about + contact</li>
+                        <li className="font-bad-handwriting text-pink-800 underline italic">explore</li>
+                        <li className="font-bad-handwriting" onClick={() => activeSection !== 'webdesign' ? setActiveSection('webdesign') : setActiveSection(null)}>web design</li>
+                        <li className="font-bad-handwriting" onClick={() => activeSection !== 'mascots' ? setActiveSection('mascots') : setActiveSection(null)}>mascots</li>
+                        <li className="font-bad-handwriting" onClick={() => activeSection !== 'graphicdesign' ? setActiveSection('graphicdesign') : setActiveSection(null)}>graphic design</li>
+                        <li className="font-bad-handwriting" onClick={() => activeSection !== 'illustration' ? setActiveSection('illustration') : setActiveSection(null)}>illustration</li>
+                        <li className="font-bad-handwriting" onClick={() => activeSection !== 'aboutcontact' ? setActiveSection('aboutcontact') : setActiveSection(null)}>about + contact</li>
                     </ul>
                 </div>
                 {/* body */}
                 <div class="w-full bg-linear-to-b  from-white/90 to-white/10">
                     {/* nothing here yet div */}
                     <div className={activeSection === null ? 'block place-self-center h-[55vh]' : 'hidden'}>
-                        <h1 className="text-center bad-handwriting text-3xl text-pink-900">you haven't opened anything yet. <br />click an item on the sidebar to view my work!</h1>
+                        <h1 className="text-center font-bad-handwriting text-3xl text-pink-900">you haven't opened anything yet. <br />click an item on the sidebar to view my work!</h1>
                     </div>
 
                     <div className={activeSection === 'webdesign' ? 'block h-[55vh] overflow-y-scroll scrollbar' : 'hidden'}>
-                        <h1 className="text-6xl bad-handwriting text-pink-800">web design</h1>
-                        <h2 className="text-4xl bad-handwriting">work for <a className="underline hover:decoration-wavy" href="https://hackclub.com" target="_blank">Hack Club</a> and my personal websites. </h2>
+                        <h1 className="text-6xl font-bad-handwriting text-pink-800">web design</h1>
+                        <h2 className="text-4xl font-bad-handwriting">work for <a className="underline hover:decoration-wavy" href="https://hackclub.com" target="_blank">Hack Club</a> and my personal websites. </h2>
                         <WebDesignContainer title="Sleepover" description="Branding for Hack Club Athena Initiative's Sleepover, an all-girls coding program where teens spend 30 hours creating technical projects for a Sleepover-themed hackathon in Chicago." link="https://sleepover.hackclub.com" imgConstants={sleepoverImages} />
                         <WebDesignContainer title="Spaceship" description="Website design for Hack Club's Spaceship, a pitch for a program where teens code 35+ hours to earn a trip to wherever they want, or exchange their hours for prizes!" link="https://spaceship-website.vercel.app/" imgConstants={SpaceshipImages} />
                         <WebDesignContainer title="Paradox" description="Branding I did for Hack Club's Paradox, a program where teens spend 35 hours building projects to go to a hackathon in a theatre in London." link="https://paradox.hackclub.com" imgConstants={paradoxImages} />
                         {/* more */}
                         <div>
-                            <h1 className="bad-handwriting text-5xl underline text-pink-900 hidden">+ More</h1>
-                            <h2 className="bad-handwriting text-3xl hidden">Other design work I've done.</h2>
+                            <h1 className="font-bad-handwriting text-5xl underline text-pink-900 hidden">+ More</h1>
+                            <h2 className="font-bad-handwriting text-3xl hidden">Other design work I've done.</h2>
                             <p className="hidden">add arcade website and storyboard anmd shi etc</p>
                         </div>
                     </div>
@@ -99,8 +99,8 @@ function Design() {
                     </div>
                     {/* graphic design container */}
                     <div className={activeSection === 'graphicdesign' ? 'block h-[55vh] overflow-y-scroll scrollbar' : 'hidden'}>
-                        <h1 className="text-6xl bad-handwriting text-pink-800">graphic design</h1>
-                        <h2 className="text-4xl bad-handwriting">made with Figma, Canva, Adobe Photoshop, and Krita. <br /> freelance work and various ads for Student Council. </h2>
+                        <h1 className="text-6xl font-bad-handwriting text-pink-800">graphic design</h1>
+                        <h2 className="text-4xl font-bad-handwriting">made with Figma, Canva, Adobe Photoshop, and Krita. <br /> freelance work and various ads for Student Council. </h2>
                         <div className="justify-center flex flex-row flex-wrap [&>img]:h-[27vh] [&>img]:hover:scale-104 [&>img]:rounded-xl [&>img]:duration-200 gap-[2vh] mt-[2vh] [&>img]:outline-1 [&>img]:outline-pink-800">
                             <img src="images/design/graphicdesign/campaign_2.png" alt="design1" />
                             <img src="images/design/graphicdesign/campaign_1.png" alt="design1" />
@@ -120,13 +120,13 @@ function Design() {
                     <div className={activeSection === 'aboutcontact' ? 'block h-[55vh] overflow-y-scroll scrollbar' : 'hidden'}>
                         {/* contact& work info part */}
                         <div>
-                            <h1 className="text-6xl bad-handwriting">Let's work together!</h1>
-                            <h1 className="text-4xl bad-handwriting mb-[2vh]">If you're interested in collaborating to make your brand, website, or idea come to life, please reach out for more information.</h1>
+                            <h1 className="text-6xl font-bad-handwriting">Let's work together!</h1>
+                            <h1 className="text-4xl font-bad-handwriting mb-[2vh]">If you're interested in collaborating to make your brand, website, or idea come to life, please reach out for more information.</h1>
                         </div>
                         {/* idk this front part */}
                         <div className="flex flex-row gap-[2vh] [&>div]:w-[50%]">
                             <div>
-                                <h1 className="text-5xl bad-handwriting text-pink-700">design tools</h1>
+                                <h1 className="text-5xl font-bad-handwriting text-pink-700">design tools</h1>
                                 <div className="flex flex-row flex-wrap gap-[1vh] m-[2vh] ml-[2vh] mr-[2vh] justify-center place-content-center">
                                     <DesignTool tool="Figma" />
                                     <DesignTool tool="Canva" />
@@ -141,11 +141,11 @@ function Design() {
                                 </div>
                             </div>
                             <div>
-                                <h1 className="text-5xl bad-handwriting text-pink-700">contact me!</h1>
+                                <h1 className="text-5xl font-bad-handwriting text-pink-700">contact me!</h1>
                                 {/* contact */}
                                 {/* chopped asl fix later */}
                                 <div>
-                                    <h1 className="text-4xl bad-handwriting m-[1vh]">I'm easiest to contact via phone. <a className="underline hover:decoration-wavy" href="tel:+1(613)4153586">tel:+1(613)4153586</a></h1>
+                                    <h1 className="text-4xl font-bad-handwriting m-[1vh]">I'm easiest to contact via phone. <a className="underline hover:decoration-wavy" href="tel:+1(613)4153586">tel:+1(613)4153586</a></h1>
                                 </div>
                                 <div className="flex flex-row gap-[4vh] pointer-events-auto">
                                     <a href="https://github.com/ikealoverkat" target="_blank"><img src="images/icon_github.png" width="50vh" className="hover:w-[6.5vh] duration-200"></img></a>

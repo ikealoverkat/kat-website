@@ -7,10 +7,10 @@ function BlogContainer({ title, description, date, link }) {
         <Link to={link} className="bg-linear-to-b from-white/75 to-white/40 w-full lg:w-[40%] bg-cover m-[4vh] p-[4vh] rounded-2xl shadow-lg shadow-black/15 hover:p-[6vh] duration-300 hover:shadow-xl">
             <div>
                 <div className="flex flex-col lg:flex-row gap-0 lg:gap-[4vh] items-center">
-                    <h2 className="text-5xl bad-handwriting underline hover:decoration-wavy">{title}</h2>
-                    <h3 className="text-3xl bad-handwriting text-pink-950">{date}</h3>
+                    <h2 className="text-5xl font-bad-handwriting underline hover:decoration-wavy">{title}</h2>
+                    <h3 className="text-3xl font-bad-handwriting text-pink-950">{date}</h3>
                 </div>
-                <p className="text-2xl bad-handwriting text-center lg:text-left">{description}</p>
+                <p className="text-2xl font-bad-handwriting text-center lg:text-left">{description}</p>
             </div>
         </Link>
     )
@@ -20,14 +20,14 @@ function Blog() {
     return (
         <div>
             {/* everything but footer */}
-            <div className="p-[4vh] bg-[url('images/backgrounds/home.webp')] bg-cover">
+            <div className="p-[4vh] bg-cover" style={{ backgroundImage: "url('/images/backgrounds/home.webp')" }}>
                 {/* title block */}
                 <div className="flex flex-row gap-[4vh] h-40">
                     {/* text */}
                     <div>
-                        <a href="/" className="text-3xl bad-handwriting underline hover:decoration-wavy">back</a>
-                        <h1 className="text-7xl bad-handwriting underline text-pink-800">kat journal</h1>
-                        <h2 className="text-5xl bad-handwriting">I write stuff sometimes</h2>
+                        <a href="/" className="text-3xl font-bad-handwriting underline hover:decoration-wavy">back</a>
+                        <h1 className="text-7xl font-bad-handwriting underline text-pink-800">kat journal</h1>
+                        <h2 className="text-5xl font-bad-handwriting">I write stuff sometimes</h2>
                     </div>
                     <img src="images/icon_blog.png" alt="blog cat icon" className="object-scale-down" />
                 </div>

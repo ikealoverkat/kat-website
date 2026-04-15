@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: bad_handwriting;
-    src: url(bad_handwriting.ttf);
+    src: url('/bad_handwriting.ttf') format('truetype');
 }
 
-.bad-handwriting {
-    font-family: bad_handwriting;
+@theme {
+    --font-bad-handwriting: 'bad_handwriting', serif;
 }
 
 .scrollbar-hide {
