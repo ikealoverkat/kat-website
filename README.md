@@ -1,16 +1,11 @@
-# React + Vite
+# hi, i'm kat! (this is my personal website)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this is my personal website. it has a lot of my work as an artist & web developer. it also has my contact information because I would really like to get more work as an illustrator! :D
 
-Currently, two official plugins are available:
+it's built using react & compiled with vite (i have a love-hate relationship with vite). I'm hoping to get a domain for it soon!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I drew 2 mascots for this website, the white cat (named vegetable) and the bunny (named pillow). I hope you think they are cute because I think they are really cute and add alot to the website.
 
-## React Compiler
+in the future, I'm planning to add a personal projects page, work experience page, and more blog posts. maybe sound effects or music too! i really want this to be the type of project I add to every month.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+WARNING: THIS WEBSITE IS NOT ADJUSTED FOR MOBILE DEVICES BECAUSE I HATE RESPONSIVE DESIGN SORRY YOU NEED A LAPTOP
