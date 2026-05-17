@@ -66,27 +66,27 @@ function Home() {
       <Hero />
       <h1 id="navigation" className="text-8xl text-center font-bad-handwriting">hi, I'm Kat! look at my...</h1>
       {/* Navigation */}
-      <nav className="flex place-self-center">
+      <nav className="flex justify-center w-full">
         <Link to="/design">
-          <div className="place-items-center">
+          <div className="flex flex-col items-center">
             <img src="images/icon_design.png" className="w-[40vh] hover:w-[43vh] duration-200"></img>
             <h2 className="text-5xl font-bad-handwriting">design</h2>
           </div>
         </Link>
-        <Link to="/">
-          <div className="place-items-center hidden">
+        <Link to="/" className="hidden">
+          <div className="flex flex-col items-center">
             <img src="images/icon_awards.png" className="w-[40vh] hover:w-[43vh] duration-200"></img>
             <h2 className="text-5xl font-bad-handwriting">work/ECs & achievements</h2>
           </div>
         </Link>
-        <Link to="/">
-          <div className="place-items-center hidden">
+        <Link to="/" className="hidden">
+          <div className="flex flex-col items-center">
             <img src="images/icon_projects.png" className="w-[40vh] hover:w-[43vh] duration-200"></img>
             <h2 className="text-5xl font-bad-handwriting">projects</h2>
           </div>
         </Link>
         <Link to="/blog">
-          <div className="place-items-center">
+          <div className="flex flex-col items-center">
             <img src="images/icon_blog.png" className="w-[40vh] hover:w-[43vh] duration-200"></img>
             <h2 className="text-5xl font-bad-handwriting">blog</h2>
           </div>
